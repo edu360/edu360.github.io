@@ -33,7 +33,8 @@
    <link rel="stylesheet" href="css/style.css">
    <!-- Moadl Video styles-->
    <link rel="stylesheet" href="css/modal-video.min.css">
-      <link rel="stylesheet" href="css/audioplayer.css" />
+
+   <link rel="stylesheet" href="css/audioplayer.css" />
    <!-- Responsive styles-->
    <link rel="stylesheet" href="css/responsive.css">
    <!-- Custom styles-->
@@ -80,7 +81,7 @@
                         <a href="resources.html">Resources</a>
                      </li>
                      <li class="header-ticket nav-item">
-                        <a class="ticket-btn btn" href="pricing.html"> Login
+                        <a class="ticket-btn btn" href="login.html"> Login
                         </a>
                      </li>
                   </ul>
@@ -219,25 +220,25 @@
                            <div class="col-lg-3 col-md-6 align-self-center" title="Business">
                               <div class="about-video vid">
                                  <img class="img-fluid" src="https://img.youtube.com/vi/OfmIZujnRFc/0.jpg" alt="">
-                                 <a href="//www.youtube.com/watch?v=OfmIZujnRFc" class="video-btn ts-video-popup vid"><i class="icon icon-play"></i></a>
+                                 <a href="#" class="video-btn vid js-video-button" data-video-id="OfmIZujnRFc" data-fancybox="gallery" data-caption=""><i class="icon icon-play"></i></a>
                               </div><!-- entro video end-->
                            </div><!-- col end-->
                            <div class="col-lg-3 col-md-6 align-self-center" title="Business">
                               <div class="about-video vid">
                                  <img class="img-fluid" src="https://img.youtube.com/vi/lqzfnQ8B1m8/0.jpg" alt="">
-                                 <a href="//www.youtube.com/watch?v=lqzfnQ8B1m8&" class="video-btn ts-video-popup vid"><i class="icon icon-play"></i></a>
+                                 <a href="#" class="video-btn vid js-video-button" data-video-id="lqzfnQ8B1m8" data-fancybox="gallery" data-caption=""><i class="icon icon-play"></i></a>
                               </div><!-- entro video end-->
                            </div><!-- col end-->
                            <div class="col-lg-3 col-md-6 align-self-center" title="Business">
                               <div class="about-video vid">
                                  <img class="img-fluid" src="https://img.youtube.com/vi/w4ZV3vtUfn4/0.jpg" alt="">
-                                 <a href="//www.youtube.com/watch?v=w4ZV3vtUfn4" class="video-btn ts-video-popup vid"><i class="icon icon-play"></i></a>
+                                 <a href="#" class="video-btn vid js-video-button" data-video-id="w4ZV3vtUfn4" data-fancybox="gallery" data-caption=""><i class="icon icon-play"></i></a>
                               </div><!-- entro video end-->
                            </div><!-- col end-->
                            <div class="col-lg-3 col-md-6 align-self-center" title="Business">
                               <div class="about-video vid">
                                  <img class="img-fluid" src="https://img.youtube.com/vi/t7ahsYATGGk/0.jpg" alt="">
-                                 <a href="//www.youtube.com/watch?v=t7ahsYATGGk" class="video-btn ts-video-popup vid"><i class="icon icon-play"></i></a>
+                                 <a href="#" class="video-btn vid js-video-button" data-video-id="t7ahsYATGGk" data-fancybox="gallery" data-caption=""><i class="icon icon-play"></i></a>
                               </div><!-- entro video end-->
                            </div><!-- col end-->
                         </div>
@@ -517,6 +518,20 @@
                 );
               });
          </script>
+
+   <script src="js/jquery-modal-video.js"></script>
+   <script>
+      $(".js-modal-btn").modalVideo();
+      $(".js-video-button").modalVideo({
+         youtube:{
+            controls:1,
+            nocookie: true,
+            loop: 1,
+            autoplay: 1,
+            rel : 0
+         }
+      });
+   </script>
    </div>
    <!-- Body inner end -->
 </body>
